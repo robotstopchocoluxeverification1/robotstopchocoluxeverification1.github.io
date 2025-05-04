@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hCaptcha Verification</title>
+    <script src="https://hcaptcha.com/1/api.js" async defer></script>
+    <style>
+        #goButton {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="h-captcha" data-sitekey="your-site-key" data-callback="showButton"></div>
+    <button id="goButton" onclick="window.location.href='https://helloukchocoluxe.wixsite.com/en-uk/'">Go to Website</button>
+
+    <script>
+        function showButton() {
+            document.getElementById("goButton").style.display = "block";
+        }
+    </script>
+</body>
+</html>
